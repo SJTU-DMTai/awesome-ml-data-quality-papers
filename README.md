@@ -10,7 +10,7 @@ Before we proceed, let's define **data quality for ML**. In contrast to traditio
 
 Considering the following pipeline, DQMS acts as a **middleware** between data, ML model, and user, necessitating interactions with each of them.
 
-![Framework of DQMS.](./framework.png)
+<img width="70%" src ="./framework.png"/>
 
 Firstly, DQMS needs to interact with the data sources to acquire the training dataset. Next, it feeds the training dataset into the ML model and obtains model feedback. Then, DQMS combines the model feedback with the user's task requirements to evaluate the data quality of the current training dataset. It provides feedback to the user in a comprehensible format and utilizes the data quality information to select new and improved training data from the data source.
 
@@ -18,17 +18,23 @@ Hence, we can classify existing research work based on the three functional modu
 
 ## Data Selector: Interact with Data Source
 
+Including researches about **Data Debugging**, **Data Selection**, ...
+
 ### 2023
 
 - [NIPS] Data Selection for Language Models via Importance Resampling [[PDF](https://arxiv.org/pdf/2302.03169.pdf)][[Code](https://github.com/p-lambda/dsir)]
 
 ## Data Attributer: Interact with ML Model
 
+Including researches about **Data Valuation**, **Data Attribution**, **Data Explanation**, ...
+
 ### 2024
 
 - [ICLR] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[PDF](https://openreview.net/pdf?id=HE9eUQlAvo)][[Code](https://github.com/anshuman23/InfDataSel)]
 
 ## Data Profiler: Interact with User
+
+Including researches about **Data Profiling**, **Data Summary**, ...
 
 ### 2022
 
