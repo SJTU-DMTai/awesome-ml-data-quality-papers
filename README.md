@@ -10,32 +10,35 @@ Before we proceed, let's define **data quality for ML**. In contrast to traditio
 
 Considering the following pipeline, DQMS acts as a **middleware** between data, ML model, and user, necessitating interactions with each of them.
 
-<img width="70%" src ="./framework.png"/>
 
-Firstly, DQMS needs to interact with the data sources to acquire the training dataset. Next, it feeds the training dataset into the ML model and obtains model feedback. Then, DQMS combines the model feedback with the user's task requirements to evaluate the data quality of the current training dataset. It provides feedback to the user in a comprehensible format and utilizes the data quality information to select new and improved training data from the data source.
+<div align=center>
+<img src="./framework.png" width = "70%" />
+</div>
+A DQMS typically consists of three components: **Data Selector**, **Data Attributer**, and **Data Profiler**. To achieve a well-performing ML model, multiple rounds of training are often required. In this process, the DQMS needs to iteratively adjust the training data based on the results of each round of model training. The work flow of DQMS in one round of training is as followed: (a) Data Selector first acquires the training dataset from a data source and train the ML model with it. (b) After trained for one round (several epochs), Data Attributer absorbs feedback from the model and user's task specifications, and compute assess the data quality assessment. (c) Data Profiler then provides a user-friendly summary of the training data. (d) Meanwhile, Data Selector utilizes the data quality assessment as feedback to acquire higher-quality training data, thus initiating a new iteration.
 
-Hence, we can classify existing research work based on the three functional modules of DQMS:
+We collect the recent papers about DQMS for ML model, and annotate the relevant DQMS components involved in these papers, where ❶ = Data Selector, ❷ = Data Attributer, and ❸ = Data Profiler.
 
-## Data Selector: Interact with Data Source
+## 2024
 
-Including researches about **Data Debugging**, **Data Selection**, ...
+- [ICLR 24] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[paper](https://openreview.net/pdf?id=HE9eUQlAvo)] [[code](https://github.com/anshuman23/InfDataSel)] ❷
+- 
 
-### 2023
+## 2023
 
-- [NIPS] Data Selection for Language Models via Importance Resampling [[PDF](https://arxiv.org/pdf/2302.03169.pdf)][[Code](https://github.com/p-lambda/dsir)]
+- [NIPS 23] Data Selection for Language Models via Importance Resampling [[paper](https://arxiv.org/pdf/2302.03169.pdf)] [[code](https://github.com/p-lambda/dsir)] ❶
+- [NIPS 23] Sample based Explanations via Generalized Representers [[paper](https://openreview.net/pdf?id=fX64q0SNfL)] ❷
+- [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] ❷
+- [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] ❷❸
 
-## Data Attributer: Interact with ML Model
+## 2022
 
-Including researches about **Data Valuation**, **Data Attribution**, **Data Explanation**, ...
 
-### 2024
 
-- [ICLR] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[PDF](https://openreview.net/pdf?id=HE9eUQlAvo)][[Code](https://github.com/anshuman23/InfDataSel)]
+## 2021 and before
 
-## Data Profiler: Interact with User
 
-Including researches about **Data Profiling**, **Data Summary**, ...
 
-### 2022
+## Survey Papers
 
-- [SIGMOD] Interpretable Data-Based Explanations for Fairness Debugging [[PDF](https://arxiv.org/pdf/2112.09745.pdf)][[Video](https://www.youtube.com/watch?v=bt_VL1eSu30)]
+- [NIPS 23] DataPerf: Benchmarks for Data-Centric AI Development [[paper]([pdf (openreview.net)](https://openreview.net/pdf?id=LaFKTgrZMG))] [[code](https://github.com/MLCommons/dataperf)] ❶❷❸
+
