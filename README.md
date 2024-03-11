@@ -21,14 +21,14 @@ We collect the recent influential papers about DQMS for ML, and annotate the rel
 
 ## 2024
 
-- [ICLR 24] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[paper](https://openreview.net/pdf?id=HE9eUQlAvo)] [[code](https://github.com/anshuman23/InfDataSel)] ❷❸
-- [ICLR 24] Canonpipe: Data Debugging with Shapley Importance over Machine Learning Pipelines [[paper](https://openreview.net/pdf?id=qxGXjWxabq)] [[code](https://github.com/easeml/datascope)] ❷❸
+- [ICLR 24] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[paper](https://openreview.net/pdf?id=HE9eUQlAvo)] [[code](https://github.com/anshuman23/InfDataSel)] ❶❷
+- [ICLR 24] Canonpipe: Data Debugging with Shapley Importance over Machine Learning Pipelines [[paper](https://openreview.net/pdf?id=qxGXjWxabq)] [[code](https://github.com/easeml/datascope)] ❶❷
 
 ## 2023
 
 - [NIPS 23] Data Selection for Language Models via Importance Resampling [[paper](https://openreview.net/pdf?id=uPSQv0leAu)] [[code](https://github.com/p-lambda/dsir)] ❶
 - [NIPS 23] Sample based Explanations via Generalized Representers [[paper](https://openreview.net/pdf?id=fX64q0SNfL)] ❷
-- [NIPS 23] OpenDataVal: a Unified Benchmark for Data Valuation [[paper]([pdf (openreview.net)](https://openreview.net/pdf?id=eEK99egXeB))] [[code](https://opendataval.github.io/)] ❷
+- [NIPS 23] OpenDataVal: a Unified Benchmark for Data Valuation [[paper](https://openreview.net/pdf?id=eEK99egXeB)] [[code](https://opendataval.github.io/)] ❷
 - [NIPS 23] Model Shapley: Equitable Model Valuation with Black-box Access ❷
 - [NIPS 23] A Privacy-Friendly Approach to Data Valuation ❷
 - [NIPS 23] GEX: A flexible method for approximating influence via Geometric Ensemble ❷
@@ -60,7 +60,7 @@ We collect the recent influential papers about DQMS for ML, and annotate the rel
 ## Survey Papers
 
 - [NIPS 23] DataPerf: Benchmarks for Data-Centric AI Development [[paper](https://openreview.net/pdf?id=LaFKTgrZMG)] [[code](https://github.com/MLCommons/dataperf)] ❶❷❸
-- [arXiv 23] Data Management For Large Language Models: A Survey [[paper](https://arxiv.org/pdf/2312.01700.pdf)] [[code](https://github.com/ZigeW/data_management_LLM)] ❷❸
+- [arXiv 23] Data Management For Large Language Models: A Survey [[paper](https://arxiv.org/pdf/2312.01700.pdf)] [[code](https://github.com/ZigeW/data_management_LLM)] ❶❷
 - [arXiv 23] Training Data Influence Analysis and Estimation: A Survey [[paper](https://arxiv.org/pdf/2212.04612.pdf)] [[code](https://github.com/ZaydH/influence_analysis_papers)] ❷
 
 ## Related Works
