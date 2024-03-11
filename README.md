@@ -14,6 +14,7 @@ Considering the following pipeline, DQMS acts as a **middleware** between data, 
 <div align=center>
 <img src="./framework.png" width = "70%" />
 </div>
+
 A DQMS typically consists of three components: **Data Selector**, **Data Attributer**, and **Data Profiler**. To achieve a well-performing ML model, multiple rounds of training are often required. In this process, the DQMS needs to iteratively adjust the training data based on the results of each round of model training. The work flow of DQMS in one round of training is as followed: (a) Data Selector first acquires the training dataset from a data source and train the ML model with it. (b) After trained for one round (several epochs), Data Attributer absorbs feedback from the model and user's task specifications, and compute assess the data quality assessment. (c) Data Profiler then provides a user-friendly summary of the training data. (d) Meanwhile, Data Selector utilizes the data quality assessment as feedback to acquire higher-quality training data, thus initiating a new iteration.
 
 We collect the recent papers about DQMS for ML model, and annotate the relevant DQMS components involved in these papers, where ❶ = Data Selector, ❷ = Data Attributer, and ❸ = Data Profiler.
