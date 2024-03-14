@@ -50,14 +50,32 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 - [NIPS 23] Towards Accelerated Model Training via Bayesian Data Selection [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/1af3e0bf5905e33789979f666c31192d-Paper-Conference.pdf)] `DS`
 - [NIPS 23] Robust Data Valuation with Weighted Banzhaf Values [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/bdb0596d13cfccf2db6f0cc5280d2a3f-Paper-Conference.pdf)] `DA`
 - [NIPS 23] UP-DP: Unsupervised Prompt Learning for Data Pre-Selection with Vision-Language Models [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/06d5f1fe6509b001e6d4e0ec1afd83dd-Paper-Conference.pdf)] `DS`
+- [NIPS 23] Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/c142c14699223f7417cad706fd6f652e-Paper-Conference.pdf)] [[code](https://github.com/ruoxi-jia-group/projektor)] `DS`
+- [NIPS 23] Robust Data Pruning under Label Noise via Maximizing Re-labeling Accuracy [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/ebb6bee50913ba7e1efeb91a1d47a002-Paper-Conference.pdf)] [[code](https://github.com/kaist-dmlab/Prune4Rel)] `DS`
+- [NIPS 23] Spuriosity Rankings: Sorting Data to Measure and Mitigate Biases [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/81cca94f16f20d5548c76c3344b27dea-Paper-Conference.pdf)] `DS`
+- [NIPS 23] Core-sets for Fair and Diverse Data Summarization [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/f980ba94f513168f2b292f58aef929ec-Paper-Conference.pdf)] [[code](https://github.com/microsoft/coresets-fair-diverse)] `DS` `DP`
+- [NIPS 23] Retaining Beneficial Information from Detrimental Data for Neural Network Repair [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/964b1c8dd5667fd647c09c8772829fd1-Paper-Conference.pdf)] `DS`
+- [NIPS 23] Expanding Small-Scale Datasets with Guided Imagination [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/f188a55392d3a7509b0b27f8d24364bb-Paper-Conference.pdf)] [[code](https://github.com/Vanint/DatasetExpansion)] `DS`
+- [NIPS 23] Error Discovery By Clustering Influence Embeddings [[paper](https://openreview.net/pdf?id=yBVLXvJ1sb)] [[code](https://github.com/adebayoj/infembed)] `DA`
+- [NIPS 23] HiBug: On Human-Interpretable Model Debug [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/0f53ecc0d36a5d5d3d3e94d42c4b23ca-Paper-Conference.pdf)] [[code](https://github.com/cure-lab/HiBug)] `DP` `DS`
 - [ICML 23] Discover and Cure: Concept-aware Mitigation of Spurious Correlation [[paper](https://openreview.net/pdf?id=QDxtrlPmfB)] [[code](https://github.com/Wuyxin/DISC)] `DS` `DA`
 - [ICML 23] Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value [[paper](https://proceedings.mlr.press/v202/kwon23e/kwon23e.pdf)] [[code](https://github.com/ykwon0407/dataoob)] `DA`
+- [ICML 23] Towards Sustainable Learning: Coresets for Data-efficient Deep Learning [[paper](https://proceedings.mlr.press/v202/yang23g/yang23g.pdf)] [[code](https://github.com/bigml-cs-ucla/crest)] `DS`
 - [ICLR 23] Data Valuation Without Training of a Model [[paper](https://openreview.net/pdf?id=XIzO8zr-WbM)] [[code](https://github.com/JJchy/CG_score)] `DA`
 - [ICLR 23] Distilling Model Failures as Directions in Latent Space [[paper](https://openreview.net/pdf?id=99RpBVpLiX)] [[code](https://github.com/MadryLab/failure-directions)] `DS` `DP`
 - [ICLR 23] LAVA: Data Valuation without Pre-Specified Learning Algorithms [[paper](https://openreview.net/pdf?id=JJuP86nBl4q)] [code](https://github.com/ruoxi-jia-group/LAVA)] `DA`
 - [ICLR 23] Concept-level Debugging of Part-Prototype Networks [[paper](https://openreview.net/pdf?id=oiwXWPDTyNk)] [[code](https://github.com/abonte/protopdebug)] `DP`
+- [ICLR 23] Dataset Pruning: Reducing Training Data by Examining Generalization Influence [[paper](https://openreview.net/pdf?id=4wZiAXD29TQ)] `DS`
+- [ICLR 23] Moderate Coreset: A Universal Method of Data Selection for Real-world Data-efficient Deep Learning [[paper](https://openreview.net/pdf?id=7D5EECbOaf9)] [[code](https://github.com/tmllab/Moderate-DS)] `DS`
+- [ICLR 23] Learning to Estimate Shapley Values with Vision Transformers [[paper](https://openreview.net/pdf?id=5ktFNz_pJLK)] [[code](https://github.com/suinleelab/vit-shapley)] `DA`
+- [ICLR 23] Characterizing the Influence of Graph Elements [[paper](https://openreview.net/pdf?id=51GXyzOKOp)] [[code](https://github.com/Cyrus9721/Characterizing_graph_influence)] `DA`
 - [VLDB 23] Equitable Data Valuation Meets the Right to Be Forgotten in Model Markets [[paper](https://www.vldb.org/pvldb/vol16/p3349-liu.pdf)] [[code](https://github.com/ZJU-DIVER/ValuationMeetsRTBF)] `DA`
 - [VLDB 23] Computing Rule-Based Explanations by Leveraging Counterfactuals [[paper](https://www.vldb.org/pvldb/vol16/p420-geng.pdf)] [[code](https://github.com/GibbsG/GeneticCF)] `DP`
+- [VLDB 23] Data Collection and Quality Challenges for Deep Learning [[paper](https://www.vldb.org/pvldb/vol13/p3429-whang.pdf)] `DS` `DA`
+- [SIGMOD 23] HybridPipe: Combining Human-generated and Machine-generated Pipelines for Data Preparation [[paper](https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/haipipe-acm.pdf)] [[code](https://github.com/ruc-datalab/Haipipe)] `DS` `DP`
+- [SIGMOD 23] XInsight: eXplainable Data Analysis Through The Lens of Causality [[paper](https://arxiv.org/pdf/2207.12718.pdf)] `DP` 
+- [SIGMOD 23] GoodCore: Coreset Selection over Incomplete Data for Data-effective and Data-efficient Machine Learning [[paper](https://dl.acm.org/doi/pdf/10.1145/3589302)] `DS`
+- [ICDE 23] Automatic Feasibility Study via Data Quality Analysis for ML: A Case-Study on Label Noise [[paper](https://arxiv.org/pdf/2010.08410.pdf)] [[code](https://github.com/easeml/snoopy)] `DP`
 - [AISTATS 23] Data Banzhaf: A Robust Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v206/wang23e/wang23e.pdf)] `DA`
 
 ### 2022
@@ -106,6 +124,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 - [NIPS 23] DataPerf: Benchmarks for Data-Centric AI Development [[paper](https://openreview.net/pdf?id=LaFKTgrZMG)] [[code](https://github.com/MLCommons/dataperf)] [[website](https://dynabench.org/)] `DS` `DA` `DP`
 - [NIPS 23] OpenDataVal: a Unified Benchmark for Data Valuation [[paper](https://openreview.net/pdf?id=eEK99egXeB)] [[code](https://opendataval.github.io/)] `DA`
+- [NIPS 23] Improving multimodal datasets with image captioning [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/45e604a3e33d10fba508e755faa72345-Paper-Datasets_and_Benchmarks.pdf)] [[code](https://huggingface.co/datasets/thaottn/DataComp_medium_pool_BLIP2_captions)] `DS`
 - [DEEM 22] dcbench: A Benchmark for Data-Centric AI Systems [[paper](https://dl.acm.org/doi/pdf/10.1145/3533028.3533310?casa_token=hMwaReODUK0AAAAA:ocILXrfHOqC3QkaUltJRHM54vtiBwwBzZhM7QPBYNF5nIgivFRwTqjc3U7TZAvR5wekIuskjHIEwWQ)] [[code](https://github.com/data-centric-ai/dcbench)] `DS`
 
 ## Related Works
