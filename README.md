@@ -15,6 +15,7 @@ Considering the following pipeline, DQMS acts as a **middleware** between data, 
 <div align=center>
 <img src="./framework.png" width = "70%" />
 </div>
+
 A DQMS for ML typically consists of three components: **Data Selector**, **Data Attributer**, and **Data Profiler**. To achieve a well-performing ML model, multiple rounds of training are often required. In this process, the DQMS needs to iteratively adjust the training data based on the results of each round of model training. The workflow of DQMS in one round of training is as follows: (a) Data Selector first acquires the training dataset from a data source and trains the ML model with it. (b) After training for one round (several epochs), Data Attributer absorbs feedback from the model and user's task requirements and computes the data quality assessment. (c) Data Profiler then provides a user-friendly summary of the training data. (d) Meanwhile, Data Selector utilizes the data quality assessment as feedback to acquire higher-quality training data, thus initiating a new iteration.
 
 We collect the recent influential papers about DQMS for ML and annotate the relevant DQMS components involved in these papers, where `DS` = Data Selector, `DA` = Data Attributer, and `DP` = Data Profiler.
@@ -79,6 +80,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 38. [ICDE 23] Automatic Feasibility Study via Data Quality Analysis for ML: A Case-Study on Label Noise [[paper](https://arxiv.org/pdf/2010.08410.pdf)] [[code](https://github.com/easeml/snoopy)] `DP`
 39. [AAAI 23] Fundamentals of Task-Agnostic Data Valuation [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/26106/25878)] `DA`
 40. [AISTATS 23] Data Banzhaf: A Robust Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v206/wang23e/wang23e.pdf)] `DA`
+41. [arXiv 23] Data-Juicer: A One-Stop Data Processing System for Large Language Models [[paper](https://arxiv.org/pdf/2309.02033.pdf)] [[code](https://github.com/alibaba/data-juicer)]  `DS` `DP`
 
 ### 2022
 
@@ -89,10 +91,11 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 5. [ICML 22] Datamodels: Predicting Predictions from Training Data [[paper](https://proceedings.mlr.press/v162/ilyas22a/ilyas22a.pdf)] [[code](https://github.com/MadryLab/datamodels-data)] `DA`
 6. [ICML 22] Prioritized Training on Points that are learnable, Worth Learning, and Not Yet Learnt [[paper](https://proceedings.mlr.press/v162/mindermann22a/mindermann22a.pdf)] [[code](https://github.com/OATML/RHO-Loss)] `DS`
 7. [ICLR 22] Domino: Discovering systematic errors with cross-modal embeddings [[paper](https://openreview.net/pdf?id=FPCMqjI0jXN)] [[code](https://github.com/HazyResearch/domino)] `DA` `DP`
-8. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
-9. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
-10. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
-11. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
+8. [VLDB 22] Toward Interpretable and Actionable Data Analysis with Explanations and Causality [[paper](https://www.vldb.org/pvldb/vol15/p3812-roy.pdf)] `DP`
+9. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
+10. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
+11. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
+12. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
 
 ### 2021 and before
 
@@ -129,7 +132,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 3. [NIPS 23] Improving multimodal datasets with image captioning [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/45e604a3e33d10fba508e755faa72345-Paper-Datasets_and_Benchmarks.pdf)] [[code](https://huggingface.co/datasets/thaottn/DataComp_medium_pool_BLIP2_captions)] `DS`
 4. [DEEM 22] dcbench: A Benchmark for Data-Centric AI Systems [[paper](https://dl.acm.org/doi/pdf/10.1145/3533028.3533310?casa_token=hMwaReODUK0AAAAA:ocILXrfHOqC3QkaUltJRHM54vtiBwwBzZhM7QPBYNF5nIgivFRwTqjc3U7TZAvR5wekIuskjHIEwWQ)] [[code](https://github.com/data-centric-ai/dcbench)] `DS`
 
-## Related Works
+## Related Repos
 
 1. More papers about Data Valuation can be found in [awesome-data-valuation](https://github.com/daviddao/awesome-data-valuation). `DA`
 2. More papers about Data Selection can be found in [Awesome-Coreset-Selection](https://github.com/PatrickZH/Awesome-Coreset-Selection). `DS`
