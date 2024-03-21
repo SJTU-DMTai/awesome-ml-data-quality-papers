@@ -114,7 +114,8 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 11. [ICLR 20] Selection via proxy: Efficient data selection for deep learning [[paper](https://openreview.net/pdf?id=HJg2b0VYDr)] [[code](https://github.com/stanford-futuredata/selection-via-proxy)] `DS`
 12. [SIGMOD 20] Complaint Driven Training Data Debugging for Query 2.0 [[paper](https://arxiv.org/pdf/2004.05722.pdf)] [[video](https://www.youtube.com/watch?v=qvgBmM1LP38)] `DA`
 13. [ICML 19] Data Shapley: Equitable Valuation of Data for Machine Learning [[paper](https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf)] [[code](https://github.com/amiratag/DataShapley)] `DA`
-14. [ICML 17] Understanding Black-box Predictions via Influence Functions [[paper](https://arxiv.org/pdf/1703.04730.pdf)] [[code](https://github.com/kohpangwei/influence-release)] `DA`
+14. [VLDB 19] Efficient task-specific data valuation for nearest neighbor algorithms [[paper](https://vldb.org/pvldb/vol12/p1610-jia.pdf)] `DA`
+15. [ICML 17] Understanding Black-box Predictions via Influence Functions [[paper](https://arxiv.org/pdf/1703.04730.pdf)] [[code](https://github.com/kohpangwei/influence-release)] `DA`
 
 ## Surveys
 
