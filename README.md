@@ -84,6 +84,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 41. [AAAI 23] Fundamentals of Task-Agnostic Data Valuation [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/26106/25878)] `DA`
 42. [AISTATS 23] Data Banzhaf: A Robust Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v206/wang23e/wang23e.pdf)] `DA`
 43. [arXiv 23] Data-Juicer: A One-Stop Data Processing System for Large Language Models [[paper](https://arxiv.org/pdf/2309.02033.pdf)] [[code](https://github.com/alibaba/data-juicer)]  `DS` `DP`
+44. [TMLR 23] Synthetic Data from Diffusion Models Improves ImageNet Classification [[paper](https://arxiv.org/pdf/2304.08466.pdf)]
 
 ### 2022
 
