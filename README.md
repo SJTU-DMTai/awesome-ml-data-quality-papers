@@ -37,7 +37,9 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 11. [ICLR 24] DataInf: Efficiently Estimating Data Influence in LoRA-tuned LLMs and Diffusion Models [[paper](https://openreview.net/pdf?id=9m02ib92Wz)] [[code](https://github.com/ykwon0407/DataInf)] `DA`
 12. [ICLR 24] What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning [[paper](https://openreview.net/pdf?id=BTKAeLqLMw)] `DS`
 13. [ICLR 24] Real-Fake: Effective Training Data Synthesis Through Distribution Matching [[paper](http://arxiv.org/pdf/2310.10402.pdf)] [[code](http://arxiv.org/pdf/2310.10402.pdf)] `DS`
-14. [arxiv 24] A Decade's Battle on Dataset Bias: Are We There Yet? [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
+14. [ICLR 24] InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning [[paper](https://openreview.net/pdf?id=C61sk5LsK6)] [[code](https://github.com/NUS-HPC-AI-Lab/InfoBatch)] `DS`
+15. [arxiv 24] A Decade's Battle on Dataset Bias: Are We There Yet? [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
+16. [arXiv 24] Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities [[paper](https://arxiv.org/pdf/2402.01071.pdf)] [[code](https://github.com/UIC-InDeXLab/Chameleon)] `DS`
 
 ### 2023
 
@@ -95,13 +97,14 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 5. [ICML 22] Meaningfully Debugging Model Mistakes using Conceptual Counterfactual Explanations [[papeer](https://proceedings.mlr.press/v162/abid22a/abid22a.pdf)] [[code](https://github.com/mertyg/debug-mistakes-cce)] `DS` `DP`
 6. [ICML 22] Datamodels: Predicting Predictions from Training Data [[paper](https://proceedings.mlr.press/v162/ilyas22a/ilyas22a.pdf)] [[code](https://github.com/MadryLab/datamodels-data)] `DA`
 7. [ICML 22] Prioritized Training on Points that are learnable, Worth Learning, and Not Yet Learnt [[paper](https://proceedings.mlr.press/v162/mindermann22a/mindermann22a.pdf)] [[code](https://github.com/OATML/RHO-Loss)] `DS`
-8. [ICLR 22] Domino: Discovering systematic errors with cross-modal embeddings [[paper](https://openreview.net/pdf?id=FPCMqjI0jXN)] [[code](https://github.com/HazyResearch/domino)] `DA` `DP`
-9. [VLDB 22] Toward Interpretable and Actionable Data Analysis with Explanations and Causality [[paper](https://www.vldb.org/pvldb/vol15/p3812-roy.pdf)] `DP`
-10. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
-11. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
-12. [ACL 22] Deduplicating training data makes language models better [[paper](https://aclanthology.org/2022.acl-long.577.pdf)] [[code](https://github.com/google-research/deduplicate-text-datasets)] `DS`
-13. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
-14. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
+8. [ICML 22] Achieving Fairness at No Utility Cost via Data Reweighing with Influence [[paper](https://proceedings.mlr.press/v162/li22p/li22p.pdf)] [[code](https://github.com/brandeis-machine-learning/influence-fairness)] `DA`
+9. [ICLR 22] Domino: Discovering systematic errors with cross-modal embeddings [[paper](https://openreview.net/pdf?id=FPCMqjI0jXN)] [[code](https://github.com/HazyResearch/domino)] `DA` `DP`
+10. [VLDB 22] Toward Interpretable and Actionable Data Analysis with Explanations and Causality [[paper](https://www.vldb.org/pvldb/vol15/p3812-roy.pdf)] `DP`
+11. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
+12. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
+13. [ACL 22] Deduplicating training data makes language models better [[paper](https://aclanthology.org/2022.acl-long.577.pdf)] [[code](https://github.com/google-research/deduplicate-text-datasets)] `DS`
+14. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
+15. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
 
 ### 2021 and before
 
