@@ -38,8 +38,12 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 12. [ICLR 24] What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning [[paper](https://openreview.net/pdf?id=BTKAeLqLMw)] `DS`
 13. [ICLR 24] Real-Fake: Effective Training Data Synthesis Through Distribution Matching [[paper](http://arxiv.org/pdf/2310.10402.pdf)] [[code](http://arxiv.org/pdf/2310.10402.pdf)] `DS`
 14. [ICLR 24] InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning [[paper](https://openreview.net/pdf?id=C61sk5LsK6)] [[code](https://github.com/NUS-HPC-AI-Lab/InfoBatch)] `DS`
-15. [arxiv 24] A Decade's Battle on Dataset Bias: Are We There Yet? [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
-16. [arXiv 24] Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities [[paper](https://arxiv.org/pdf/2402.01071.pdf)] [[code](https://github.com/UIC-InDeXLab/Chameleon)] `DS`
+15. [SIGMOD 24] Controllable Tabular Data Synthesis Using Diffusion Models `DS`
+16. [SIGMOD 24] FACET: Robust Counterfactual Explanation Analytics [[paper](https://dl.acm.org/doi/pdf/10.1145/3626729)] [[code](https://github.com/PeterVanNostrand/FACET)] `DA`
+17. [SIMOD 24] Fast Shapley Value Computation in Data Assemblage Tasks as Cooperative Simple Games [[paper](https://xuc.me/file/paper/SIGMOD24b.pdf)] [[code](https://github.com/IDEAL-Lab/shapley-value-simple-game)] `DA`
+18. [SIGMOD 24] Summarized Causal Explanations For Aggregate Views [[paper](https://amirgilad.github.io/publication/sigmod24_1/causumx.pdf)] `DA` `DP`
+19. [arxiv 24] A Decade's Battle on Dataset Bias: Are We There Yet? [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
+20. [arXiv 24] Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities [[paper](https://arxiv.org/pdf/2402.01071.pdf)] [[code](https://github.com/UIC-InDeXLab/Chameleon)] `DS`
 
 ### 2023
 
