@@ -4,7 +4,7 @@ This is a list of papers about training data quality management for ML models.
 
 ## Introduction
 
-Data scientists spend ∼80% time on data preparation for an ML pipeline since the data quality issues are unknown beforehand thereby leading to iterative debugging. A good Data Quality Management System for ML (**DQMS for ML**) helps data scientists break free from the arduous process of data selection and debugging, particularly in the current era of big data and large models. Automating the management of training data quality effectively is crucial for improving the efficiency and quality of ML pipelines.
+Data scientists spend ∼80% time on data preparation for an ML pipeline since the data quality issues are unknown beforehand thereby leading to iterative debugging [1]. A good Data Quality Management System for ML (**DQMS for ML**) helps data scientists break free from the arduous process of data selection and debugging, particularly in the current era of big data and large models. Automating the management of training data quality effectively is crucial for improving the efficiency and quality of ML pipelines.
 
 With the emergence and development of "**Data-Centric AI**", there has been increasing research focus on optimizing the quality of training data rather than solely concentrating on model structures and training strategies. This is the motivation behind maintaining this repository.
 
@@ -15,7 +15,6 @@ Considering the following pipeline, DQMS acts as a **middleware** between data, 
 <div align=center>
 <img src="./framework.png" width = "80%" />
 </div>
-
 A DQMS for ML typically consists of three components: **Data Selector**, **Data Attributer**, and **Data Profiler**. To achieve a well-performing ML model, multiple rounds of training are often required. In this process, the DQMS needs to iteratively adjust the training data based on the results of each round of model training. The workflow of DQMS in one round of training is as follows: (a) Data Selector first acquires the training dataset from a data source and trains the ML model with it. (b) After training for one round (several epochs), Data Attributer absorbs feedback from the model and user's task requirements and computes the data quality assessment. (c) Data Profiler then provides a user-friendly summary of the training data. (d) Meanwhile, Data Selector utilizes the data quality assessment as feedback to acquire higher-quality training data, thus initiating a new iteration.
 
 We collect the recent influential papers about DQMS for ML and annotate the relevant DQMS components involved in these papers, where `DS` = Data Selector, `DA` = Data Attributer, and `DP` = Data Profiler.
@@ -24,33 +23,40 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 ### 2024
 
-1. [SIGMOD 24] Controllable Tabular Data Synthesis Using Diffusion Models `DS`
-2. [SIGMOD 24] FACET: Robust Counterfactual Explanation Analytics [[paper](https://dl.acm.org/doi/pdf/10.1145/3626729)] [[code](https://github.com/PeterVanNostrand/FACET)] `DA`
-3. [SIMOD 24] Fast Shapley Value Computation in Data Assemblage Tasks as Cooperative Simple Games [[paper](https://xuc.me/file/paper/SIGMOD24b.pdf)] [[code](https://github.com/IDEAL-Lab/shapley-value-simple-game)] `DA`
-4. [SIGMOD 24] Summarized Causal Explanations For Aggregate Views [[paper](https://amirgilad.github.io/publication/sigmod24_1/causumx.pdf)] `DA` `DP`
-5. [ICLR 24] "What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection [[paper](https://openreview.net/pdf?id=HE9eUQlAvo)] [[code](https://github.com/anshuman23/InfDataSel)] `DS` `DA`
-6. [ICLR 24] Canonpipe: Data Debugging with Shapley Importance over Machine Learning Pipelines [[paper](https://openreview.net/pdf?id=qxGXjWxabq)] [[code](https://github.com/easeml/datascope)] `DA`
-7. [ICLR 24] Candidate Label Set Pruning: A Data-centric Perspective for Deep Partial-label Learning [[paper](https://openreview.net/pdf?id=Fk5IzauJ7F)] `DS`
-8. [ICLR 24] Time Travel in LLMs: Tracing Data Contamination in Large Language Models [[paper](https://openreview.net/pdf?id=2Rwq6c3tvr)] [[code](https://github.com/shahriargolchin/time-travel-in-llms)] `DA`
-9. [ICLR 24] GIO: Gradient Information Optimization for Training Dataset Selection [[paper](https://openreview.net/pdf?id=3NnfJnbJT2)] `DS`
-10. [ICLR 24] Intriguing Properties of Data Attribution on Diffusion Models [[paper](https://openreview.net/pdf?id=vKViCoKGcB)] [[code](https://github.com/sail-sg/D-TRAK)] `DA`
-11. [ICLR 24] D2 Pruning: Message Passing for Balancing Diversity and Difficulty in Data Pruning [[paper](https://openreview.net/pdf?id=thbtoAkCe9)] [[code](https://github.com/adymaharana/d2pruning)] `DS`
-12. [ICLR 24] Effective pruning of web-scale datasets based on complexity of concept clusters [[paper](https://openreview.net/pdf?id=CtOA9aN8fr)] [[code](https://github.com/amro-kamal/effective_pruning)] `DS`
-13. [ICLR 24] Towards a statistical theory of data selection under weak supervision [[paper](https://openreview.net/pdf?id=HhfcNgQn6p)] `DS`
-14. [ICLR 24] Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs [[paper](https://openreview.net/pdf?id=QmYNBVukex)] [[code](https://anonymous.4open.science/r/DV4LLM-D761/)] `DS`
-15. [ICLR 24] DataInf: Efficiently Estimating Data Influence in LoRA-tuned LLMs and Diffusion Models [[paper](https://openreview.net/pdf?id=9m02ib92Wz)] [[code](https://github.com/ykwon0407/DataInf)] `DA`
-16. [ICLR 24] What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning [[paper](https://openreview.net/pdf?id=BTKAeLqLMw)] `DS`
-17. [ICLR 24] Real-Fake: Effective Training Data Synthesis Through Distribution Matching [[paper](http://arxiv.org/pdf/2310.10402.pdf)] [[code](http://arxiv.org/pdf/2310.10402.pdf)] `DS`
-18. [ICLR 24] InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning [[paper](https://openreview.net/pdf?id=C61sk5LsK6)] [[code](https://github.com/NUS-HPC-AI-Lab/InfoBatch)] `DS`
-19. [arxiv 24] A Decade's Battle on Dataset Bias: Are We There Yet? [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
-20. [arXiv 24] Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities [[paper](https://arxiv.org/pdf/2402.01071.pdf)] [[code](https://github.com/UIC-InDeXLab/Chameleon)] `DS`
-21. [arXiv 24] On the Cause of Unfairness: A Training Sample Perspective [[paper](https://arxiv.org/pdf/2306.17828v2.pdf)] `DA`
+1. [SIGMOD 24] **Controllable Tabular Data Synthesis Using Diffusion Models** `DS`
+2. [SIMOD 24] **Fast Shapley Value Computation in Data Assemblage Tasks as Cooperative Simple Games** [[paper](https://xuc.me/file/paper/SIGMOD24b.pdf)] [[code](https://github.com/IDEAL-Lab/shapley-value-simple-game)] `DA`
+   - *TLDR: It assigns a Shapley score for data owners and their corresponding datasets in data market.*
+3. [ICLR 24] **"What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection** [[paper](https://openreview.net/pdf?id=HE9eUQlAvo)] [[code](https://github.com/anshuman23/InfDataSel)] `DS` `DA` 
+   - *TLDR: This work extends influence function into more widely applications considering utility, fairness and robustness. It trains a decision tree to further estimate and interpret the influence score.*
+4. [ICLR 24] **Canonpipe: Data Debugging with Shapley Importance over Machine Learning Pipelines** [[paper](https://openreview.net/pdf?id=qxGXjWxabq)] [[code](https://github.com/easeml/datascope)] `DA`
+   - *TLDR: It explores data valuation on raw data before preprocessing steps are performed. The authors propose a framework of data provenance in ML pipelines and a computation approach for data Shapley under a KNN approximation.*
+5. [ICLR 24] **Time Travel in LLMs: Tracing Data Contamination in Large Language Models** [[paper](https://openreview.net/pdf?id=2Rwq6c3tvr)] [[code](https://github.com/shahriargolchin/time-travel-in-llms)] `DA`
+   - *TLDR: Data contamination means the presence of test data from downstream tasks in the pre-training data of LLMs. This work explore both instance and partition level methods to identify potential contamination.*
+6. [ICLR 24] **GIO: Gradient Information Optimization for Training Dataset Selection** [[paper](https://openreview.net/pdf?id=3NnfJnbJT2)] [[code](https://github.com/daeveraert/gradient-information-optimization)] `DS`
+   - *TLDR: GIO selects a small subset of data from large source data by minimizing the KL divergence between the target distribution and subset in an iterative manner along with some approximations that make the procedure tractable.*
+7. [ICLR 24] **Intriguing Properties of Data Attribution on Diffusion Models** [[paper](https://openreview.net/pdf?id=vKViCoKGcB)] [[code](https://github.com/sail-sg/D-TRAK)] `DA`
+    - *TLDR: This paper proposes D-TRAK to attribute images generated by diffusion models back to the training data. D-TRAK extends TRAK by calculating the gradients with respect to various different loss functions and discover that alternative loss functions perform better than the original TRAK in terms of LDS, a data attribution metric.*
+8. [ICLR 24] **D2 Pruning: Message Passing for Balancing Diversity and Difficulty in Data Pruning** [[paper](https://openreview.net/pdf?id=thbtoAkCe9)] [[code](https://github.com/adymaharana/d2pruning)] `DS`
+    - *TLRD: A data pruning method that takes diversity into consideration, it is implemented by forward and reverse message passing in the KNN graph of data points.*
+9. [ICLR 24] **Effective pruning of web-scale datasets based on complexity of concept clusters** [[paper](https://openreview.net/pdf?id=CtOA9aN8fr)] [[code](https://github.com/amro-kamal/effective_pruning)] `DS`
+10. [ICLR 24] **Towards a statistical theory of data selection under weak supervision** [[paper](https://openreview.net/pdf?id=HhfcNgQn6p)] `DS`
+11. [ICLR 24] **Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs** [[paper](https://openreview.net/pdf?id=QmYNBVukex)] [[code](https://anonymous.4open.science/r/DV4LLM-D761/)] `DS`
+12. [ICLR 24] **DataInf: Efficiently Estimating Data Influence in LoRA-tuned LLMs and Diffusion Models** [[paper](https://openreview.net/pdf?id=9m02ib92Wz)] [[code](https://github.com/ykwon0407/DataInf)] `DA`
+     - *TLDR: DataInf approximate influence function by swapping the order of the matrix inversion and average calculation.*
+13. [ICLR 24] **What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning** [[paper](https://openreview.net/pdf?id=BTKAeLqLMw)] `DS`
+14. [ICLR 24] **Real-Fake: Effective Training Data Synthesis Through Distribution Matching** [[paper](http://arxiv.org/pdf/2310.10402.pdf)] [[code](http://arxiv.org/pdf/2310.10402.pdf)] `DS`
+15. [ICLR 24] **InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning** [[paper](https://openreview.net/pdf?id=C61sk5LsK6)] [[code](https://github.com/NUS-HPC-AI-Lab/InfoBatch)] `DS`
+     - *TLDR: InfoBatch is a dynamic data pruning method. For each training epoch, it leverages the training loss as quality metric to prune well-learned samples and estimate the gradient distribution for unbiased learning.*
+16. [arXiv 24] **A Decade's Battle on Dataset Bias: Are We There Yet?** [[paper](https://arxiv.org/pdf/2403.08632.pdf)] [[code](http://github.com/liuzhuang13/bias)] `DS`
+17. [arXiv 24] **Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities** [[paper](https://arxiv.org/pdf/2402.01071.pdf)] [[code](https://github.com/UIC-InDeXLab/Chameleon)] `DS`
+     - *TLDR: It uses generative AI to generate augmented datasets, ensuring that the generated data covering the original data distribution with a smallest size.*
+18. [arXiv 24] **On the Cause of Unfairness: A Training Sample Perspective** [[paper](https://arxiv.org/pdf/2306.17828v2.pdf)] `DA`
+     - *TLDR: This work proposes a framework to identify potential fairness problems in training data considering sensitive attributes, labels and features as concepts. The influence can be computed by replacing the training sample with its concept counterfactual sample.*
 
 ### 2023
 
 1. [arxiv 23] The Journey, Not the Destination: How Data Guides Diffusion Models [[paper](http://arxiv.org/pdf/2312.06205.pdf)] [[code](https://github.com/MadryLab/journey-TRAK)] `DA`
 2. [NIPS 23] Data Selection for Language Models via Importance Resampling [[paper](https://openreview.net/pdf?id=uPSQv0leAu)] [[code](https://github.com/p-lambda/dsir)] `DS` `DA`
-3. [NIPS 23] Sample based Explanations via Generalized Representers [[paper](https://openreview.net/pdf?id=fX64q0SNfL)] `DA`
 4. [NIPS 23] Model Shapley: Equitable Model Valuation with Black-box Access[[paper](https://openreview.net/pdf?id=Y6IGTNMdLT)] [[code](https://github.com/XinyiYS/ModelShapley)] `DA`
 5. [NIPS 23] Threshold KNN-Shapley: A Linear-Time and Privacy-Friendly Approach to Data Valuation [[paper](https://openreview.net/pdf?id=FAZ3i0hvm0)] `DA`
 6. [NIPS 23] GEX: A flexible method for approximating influence via Geometric Ensemble [[paper](https://openreview.net/attachment?id=tz4ECtAu8e&name=pdf)] [[code](https://github.com/sungyubkim/gex)] `DA`
@@ -70,6 +76,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 20. [NIPS 23] HiBug: On Human-Interpretable Model Debug [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/0f53ecc0d36a5d5d3d3e94d42c4b23ca-Paper-Conference.pdf)] [[code](https://github.com/cure-lab/HiBug)] `DP` `DS`
 21. [NIPS 23] Skill-it! A data-driven skills framework for understanding and training language models [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/70b8505ac79e3e131756f793cd80eb8d-Paper-Conference.pdf)] [[code](https://github.com/HazyResearch/skill-it)] `DP` `DS`
 22. [ICML 23] Discover and Cure: Concept-aware Mitigation of Spurious Correlation [[paper](https://openreview.net/pdf?id=QDxtrlPmfB)] [[code](https://github.com/Wuyxin/DISC)] `DS` `DA`
+22. [ICML 23] Trak: Attributing model behavior at scale [[paper](https://openreview.net/pdf?id=PBRArApxMh)] [[code](https://github.com/MadryLab/trak)] `DA`
 23. [ICML 23] Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value [[paper](https://proceedings.mlr.press/v202/kwon23e/kwon23e.pdf)] [[code](https://github.com/ykwon0407/dataoob)] `DA`
 24. [ICML 23] TRAK: Attributing Model Behavior at Scale [[paper](https://arxiv.org/pdf/2303.14186.pdf)] [[code](https://github.com/MadryLab/trak)] `DA`
 25. [ICML 23] Towards Sustainable Learning: Coresets for Data-efficient Deep Learning [[paper](https://proceedings.mlr.press/v202/yang23g/yang23g.pdf)] [[code](https://github.com/bigml-cs-ucla/crest)] `DS`
@@ -90,10 +97,12 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 40. [SIGMOD 23] XInsight: eXplainable Data Analysis Through The Lens of Causality [[paper](https://arxiv.org/pdf/2207.12718.pdf)] `DP`
 41. [SIGMOD 23] GoodCore: Coreset Selection over Incomplete Data for Data-effective and Data-efficient Machine Learning [[paper](https://dl.acm.org/doi/pdf/10.1145/3589302)] `DS`
 42. [ICDE 23] Automatic Feasibility Study via Data Quality Analysis for ML: A Case-Study on Label Noise [[paper](https://arxiv.org/pdf/2010.08410.pdf)] [[code](https://github.com/easeml/snoopy)] `DP`
-43. [AAAI 23] Fundamentals of Task-Agnostic Data Valuation [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/26106/25878)] `DA`
-44. [AISTATS 23] Data Banzhaf: A Robust Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v206/wang23e/wang23e.pdf)] `DA`
-45. [arXiv 23] Data-Juicer: A One-Stop Data Processing System for Large Language Models [[paper](https://arxiv.org/pdf/2309.02033.pdf)] [[code](https://github.com/alibaba/data-juicer)]  `DS` `DP`
-46. [TMLR 23] Synthetic Data from Diffusion Models Improves ImageNet Classification [[paper](https://arxiv.org/pdf/2304.08466.pdf)]
+43. [ICDE 23] Detection of Groups with Biased Representation in Ranking [[paper](https://arxiv.org/pdf/2301.00719.pdf)] `DA`
+44. [AAAI 23] Fundamentals of Task-Agnostic Data Valuation [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/26106/25878)] `DA`
+45. [AISTATS 23] Data Banzhaf: A Robust Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v206/wang23e/wang23e.pdf)] `DA`
+46. [arXiv 23] Data-Juicer: A One-Stop Data Processing System for Large Language Models [[paper](https://arxiv.org/pdf/2309.02033.pdf)] [[code](https://github.com/alibaba/data-juicer)]  `DS` `DP`
+47. [arXiv 23] Studying Large Language Model Generalization with Influence Functions [[paper](https://arxiv.org/pdf/2308.03296.pdf)] `DA`
+48. [TMLR 23] Synthetic Data from Diffusion Models Improves ImageNet Classification [[paper](https://arxiv.org/pdf/2304.08466.pdf)]
 
 ### 2022
 
@@ -105,13 +114,16 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 6. [ICML 22] Datamodels: Predicting Predictions from Training Data [[paper](https://proceedings.mlr.press/v162/ilyas22a/ilyas22a.pdf)] [[code](https://github.com/MadryLab/datamodels-data)] `DA`
 7. [ICML 22] Prioritized Training on Points that are learnable, Worth Learning, and Not Yet Learnt [[paper](https://proceedings.mlr.press/v162/mindermann22a/mindermann22a.pdf)] [[code](https://github.com/OATML/RHO-Loss)] `DS`
 8. [ICML 22] Achieving Fairness at No Utility Cost via Data Reweighing with Influence [[paper](https://proceedings.mlr.press/v162/li22p/li22p.pdf)] [[code](https://github.com/brandeis-machine-learning/influence-fairness)] `DA`
-9. [ICLR 22] Domino: Discovering systematic errors with cross-modal embeddings [[paper](https://openreview.net/pdf?id=FPCMqjI0jXN)] [[code](https://github.com/HazyResearch/domino)] `DA` `DP`
-10. [VLDB 22] Toward Interpretable and Actionable Data Analysis with Explanations and Causality [[paper](https://www.vldb.org/pvldb/vol15/p3812-roy.pdf)] `DP`
-11. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
-12. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
-13. [ACL 22] Deduplicating training data makes language models better [[paper](https://aclanthology.org/2022.acl-long.577.pdf)] [[code](https://github.com/google-research/deduplicate-text-datasets)] `DS`
-14. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
-15. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
+9. [ICML 22] DAVINZ: Data Valuation using Deep Neural Networks at Initialization [[paper](https://proceedings.mlr.press/v162/wu22j/wu22j.pdf)]  `DA`
+10. [ICML 22] Understanding Instance-Level Impact of Fairness Constraint [[paper](https://proceedings.mlr.press/v162/wang22ac/wang22ac.pdf)] [[code](https://github.com/UCSC-REAL/FairInfl)] `DA`
+11. [ICLR 22] Domino: Discovering systematic errors with cross-modal embeddings [[paper](https://openreview.net/pdf?id=FPCMqjI0jXN)] [[code](https://github.com/HazyResearch/domino)] `DA` `DP`
+12. [ICLR 22] Improving Cooperative Game Theory-based Data Valuation via Data Utility Learning [[paper](https://arxiv.org/pdf/2107.06336.pdf)] `DA`
+13. [VLDB 22] Toward Interpretable and Actionable Data Analysis with Explanations and Causality [[paper](https://www.vldb.org/pvldb/vol15/p3812-roy.pdf)] `DP`
+14. [SIGMOD 22] Complaint-Driven Training Data Debugging at Interactive Speeds [[paper](https://dl.acm.org/doi/pdf/10.1145/3514221.3517849)] `DA`
+15. [SIGMOD 22] Interpretable Data-Based Explanations for Fairness Debugging [[paper](https://arxiv.org/pdf/2112.09745.pdf)] [[video](https://www.youtube.com/watch?v=bt_VL1eSu30)] `DA` `DP`
+16. [ACL 22] Deduplicating training data makes language models better [[paper](https://aclanthology.org/2022.acl-long.577.pdf)] [[code](https://github.com/google-research/deduplicate-text-datasets)] `DS`
+17. [AAAI 22] Scaling Up Influence Functions [[paper](https://arxiv.org/pdf/2112.03052.pdf)] [[code](https://github.com/google-research/jax-influence)] `DA`
+18. [AISTATS 22] Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning [[paper](https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf)] [code](https://github.com/ykwon0407/beta_shapley)] `DA`
 
 ### 2021 and before
 
@@ -125,12 +137,13 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 8. [ICML 20]  On second-order group influence functions for black-box predictions [[paper](https://proceedings.mlr.press/v119/basu20b/basu20b.pdf)] `DA`
 9. [ICML 20] Coresets for data-efficient training of machine learning models [[paper](https://proceedings.mlr.press/v119/mirzasoleiman20a/mirzasoleiman20a.pdf)] [[code](https://github.com/baharanm/craig)] `DS`
 10. [ICML 20] Optimizing Data Usage via Differentiable Rewards [[paper](https://proceedings.mlr.press/v119/wang20p/wang20p.pdf)] `DS`
-11. [ICLR 20] Selection via proxy: Efficient data selection for deep learning [[paper](https://openreview.net/pdf?id=HJg2b0VYDr)] [[code](https://github.com/stanford-futuredata/selection-via-proxy)] `DS`
-12. [SIGMOD 20] Complaint Driven Training Data Debugging for Query 2.0 [[paper](https://arxiv.org/pdf/2004.05722.pdf)] [[video](https://www.youtube.com/watch?v=qvgBmM1LP38)] `DA`
-13. [PMLR 20] Identifying Statistical Bias in Dataset Replication [[paper](https://arxiv.org/abs/2005.09619)] [[code](https://github.com/MadryLab/dataset-replication-analysis)]
-14. [ICML 19] Data Shapley: Equitable Valuation of Data for Machine Learning [[paper](https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf)] [[code](https://github.com/amiratag/DataShapley)] `DA`
-15. [VLDB 19] Efficient task-specific data valuation for nearest neighbor algorithms [[paper](https://vldb.org/pvldb/vol12/p1610-jia.pdf)] `DA`
-16. [ICML 17] Understanding Black-box Predictions via Influence Functions [[paper](https://arxiv.org/pdf/1703.04730.pdf)] [[code](https://github.com/kohpangwei/influence-release)] `DA`
+11. [ICML 20] Data Valuation using Reinforcement Learning [[paper](https://proceedings.mlr.press/v119/yoon20a/yoon20a.pdf)] [[code](https://github.com/google-research/google-research/tree/master/dvrl)] `DA`
+12. [ICLR 20] Selection via proxy: Efficient data selection for deep learning [[paper](https://openreview.net/pdf?id=HJg2b0VYDr)] [[code](https://github.com/stanford-futuredata/selection-via-proxy)] `DS`
+13. [SIGMOD 20] Complaint Driven Training Data Debugging for Query 2.0 [[paper](https://arxiv.org/pdf/2004.05722.pdf)] [[video](https://www.youtube.com/watch?v=qvgBmM1LP38)] `DA`
+14. [PMLR 20] Identifying Statistical Bias in Dataset Replication [[paper](https://arxiv.org/abs/2005.09619)] [[code](https://github.com/MadryLab/dataset-replication-analysis)]
+15. [ICML 19] Data Shapley: Equitable Valuation of Data for Machine Learning [[paper](https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf)] [[code](https://github.com/amiratag/DataShapley)] `DA`
+16. [VLDB 19] Efficient task-specific data valuation for nearest neighbor algorithms [[paper](https://vldb.org/pvldb/vol12/p1610-jia.pdf)] `DA`
+17. [ICML 17] Understanding Black-box Predictions via Influence Functions [[paper](https://arxiv.org/pdf/1703.04730.pdf)] [[code](https://github.com/kohpangwei/influence-release)] `DA`
 
 ## Surveys
 
@@ -158,4 +171,4 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 ## Related Repos
 
 1. More papers about Data Valuation can be found in [awesome-data-valuation](https://github.com/daviddao/awesome-data-valuation). `DA`
-2. More papers about Data Selection can be found in [Awesome-Coreset-Selection](https://github.com/PatrickZH/Awesome-Coreset-Selection). `DS`
+2. More papers about Data Pruning can be found in [Awesome-Coreset-Selection](https://github.com/PatrickZH/Awesome-Coreset-Selection). `DS`
