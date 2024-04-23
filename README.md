@@ -27,7 +27,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 | Venue     | Paper                                                        |                            Links                             |   Tags    | TLDR                                                         |
 | :-------- | :----------------------------------------------------------- | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------- |
-| VLDB'24   | Optimizing Data Acquisition to Enhance Machine Learning Performance | [paper](https://www.vldb.org/pvldb/vol14/p1832-li.pdf) [code](https://github.com/AwesomeYifan/Data-acquisition-for-ML) |   `DS`    |                                                              |
+| VLDB'24   | Optimizing Data Acquisition to Enhance Machine Learning Performance | [paper](https://www.vldb.org/pvldb/vol17/p1310-bao.pdf) [code](https://github.com/rmitbggroup/da-ml) |   `DS`    |                                                              |
 | VLDB'24   | MisDetect: Iterative Mislabel Detection using Early Loss     | [paper](https://www.vldb.org/pvldb/vol17/p1159-chai.pdf) [code](https://github.com/anonymous-repo1/misdetect) |   `DA`    |                                                              |
 | SIGMOD'24 | Data Acquisition for Improving Model Confidence              |                                                              |           |                                                              |
 | SIGMOD'24 | Controllable Tabular Data Synthesis Using Diffusion Models   |                                                              |   `DS`    |                                                              |
