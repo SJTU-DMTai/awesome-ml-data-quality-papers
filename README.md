@@ -27,6 +27,9 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 | Venue     | Paper                                                        |                            Links                             |   Tags    | TLDR                                                         |
 | :-------- | :----------------------------------------------------------- | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------- |
+| KDD'24    | EcoVal: An Efficient Data Valuation Framework for Machine Learning |                                                              |   `DA`    |                                                              |
+| KDD'24    | Scalable Rule Lists Learning with Sampling                   |                                                              |   `DP`    |                                                              |
+| KDD'24    | CURLS: Causal Rule Learning for Subgroups with Significant Treatment Effect |                                                              |   `DP`    |                                                              |
 | arXiv'24  | What is Your Data Worth to GPT? LLM-Scale Data Valuation with Influence Functions |     [paper](https://arxiv.org/pdf/2405.13954#page=1.31)      |   `DA`    |                                                              |
 | arXiv'24  | CHG Shapley: Efficient Data Valuation and Selection towards Trustworthy Machine Learning |          [paper](https://arxiv.org/pdf/2406.11730)           |   `DA`    |                                                              |
 | arXiv'24  | 2D-OOB: Attributing Data Contribution through Joint Valuation Framework | [paper](https://arxiv.org/pdf/2408.03572) [code](https://github.com/YifanSun99/2d-oob) |   `DA`    |                                                              |
