@@ -25,11 +25,11 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 ### 2025
 
-| Venue     | Paper                                                       |                  Links                   | Tags | TLDR                                                         |
-| :-------- | :---------------------------------------------------------- | :--------------------------------------: | :--: | :----------------------------------------------------------- |
-| SIGMOD'25 | Shapley Value Estimation based on Differential Matrix       |                                          | `DA` |                                                              |
-| SIGMOD'25 | Modyn: Data-Centric Machine Learning Pipeline Orchestration | [code](https://arxiv.org/pdf/2312.06254) | `DS` | A pipeline to support data selection and retraining decisions in large-scale growing dataset environments. |
-|           |                                                             |                                          |      |                                                              |
+| Venue     | Paper                                                       |                   Links                   | Tags | TLDR                                                         |
+| :-------- | :---------------------------------------------------------- | :---------------------------------------: | :--: | :----------------------------------------------------------- |
+| SIGMOD'25 | Shapley Value Estimation based on Differential Matrix       |                                           | `DA` |                                                              |
+| SIGMOD'25 | Modyn: Data-Centric Machine Learning Pipeline Orchestration | [paper](https://arxiv.org/pdf/2312.06254) | `DS` | A pipeline to support data selection and retraining decisions in large-scale growing dataset environments. |
+|           |                                                             |                                           |      |                                                              |
 
 ### 2024
 
