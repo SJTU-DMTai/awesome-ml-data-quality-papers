@@ -23,6 +23,14 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 ## Paper List
 
+### 2025
+
+| Venue     | Paper                                                       |                  Links                   | Tags | TLDR                                                         |
+| :-------- | :---------------------------------------------------------- | :--------------------------------------: | :--: | :----------------------------------------------------------- |
+| SIGMOD'25 | Shapley Value Estimation based on Differential Matrix       |                                          | `DA` |                                                              |
+| SIGMOD'25 | Modyn: Data-Centric Machine Learning Pipeline Orchestration | [code](https://arxiv.org/pdf/2312.06254) | `DS` | A pipeline to support data selection and retraining decisions in large-scale growing dataset environments. |
+|           |                                                             |                                          |      |                                                              |
+
 ### 2024
 
 | Venue      | Paper                                                        |                            Links                             |   Tags    | TLDR                                                         |
@@ -88,6 +96,7 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 | VLDB'24    | Outlier Summarization via Human Interpretable Rules          | [paper](https://dl.acm.org/doi/10.14778/3654621.3654627) [code](https://github.com/baodaBBji/anonymous-Tech-Report) |   `DP`    | *It trains a decision tree model to summarize the rule patterns of outliers.* |
 | VLDB'24    | Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities | [paper](https://arxiv.org/pdf/2402.01071.pdf) [code](https://github.com/UIC-InDeXLab/Chameleon) |   `DS`    | *It uses generative AI for augmentation, ensuring that the generated data covering the original data distribution with a smallest size.* |
 | VLDB'24    | DataPrice: An Interactive System for Pricing Datasets in Data Marketplaces |   [paper](https://www.vldb.org/pvldb/vol17/p4433-liu.pdf)    |   `DA`    |                                                              |
+| SIGMOD'24  | Discovering Top-k Relevant and Diversified Rules             |     [paper](https://mxieaa.github.io/paper/SIGMOD25.pdf)     |   `DP`    |                                                              |
 | SIGMOD'24  | Rock: Cleaning Data by Embedding ML in Logic Rules           | [paper](https://dl.acm.org/doi/abs/10.1145/3626246.3653372)  | `DP` `DA` | *Rock implements a uniform data cleaning framework that unifies ML and logic deduction.* |
 | SIGMOD'24  | Data Acquisition for Improving Model Confidence              |     [paper](https://dl.acm.org/doi/pdf/10.1145/3654934)      |   `DS`    |                                                              |
 | SIGMOD'24  | Controllable Tabular Data Synthesis Using Diffusion Models   |       [paper](https://dl.acm.org/doi/10.1145/3639283)        |   `DS`    |                                                              |
