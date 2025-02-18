@@ -25,11 +25,45 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 
 ### 2025
 
-| Venue     | Paper                                                       |                   Links                   | Tags | TLDR                                                         |
-| :-------- | :---------------------------------------------------------- | :---------------------------------------: | :--: | :----------------------------------------------------------- |
-| SIGMOD'25 | Shapley Value Estimation based on Differential Matrix       |                                           | `DA` |                                                              |
-| SIGMOD'25 | Modyn: Data-Centric Machine Learning Pipeline Orchestration | [paper](https://arxiv.org/pdf/2312.06254) | `DS` | A pipeline to support data selection and retraining decisions in large-scale growing dataset environments. |
-|           |                                                             |                                           |      |                                                              |
+| Venue     | Paper                                                        |                       Links                       | Tags | TLDR                                                         |
+| :-------- | :----------------------------------------------------------- | :-----------------------------------------------: | :--: | :----------------------------------------------------------- |
+| SIGMOD'25 | Shapley Value Estimation based on Differential Matrix        |                                                   | `DA` |                                                              |
+| SIGMOD'25 | Modyn: Data-Centric Machine Learning Pipeline Orchestration  |     [paper](https://arxiv.org/pdf/2312.06254)     | `DS` | A pipeline to support data selection and retraining decisions in large-scale growing dataset environments. |
+| ICLR'25   | A Decade's Battle on Dataset Bias: Are We There Yet?         | [paper](https://openreview.net/pdf?id=SctfBCLmWo) |      |                                                              |
+| ICLR'25   | How much of my dataset did you use? Quantitative Data Usage Inference in Machine Learning | [paper](https://openreview.net/pdf?id=EUSkm2sVJ6) | `DA` |                                                              |
+| ICLR'25   | Data Shapley in One Training Run                             | [paper](https://openreview.net/pdf?id=HD6bWcj87Y) | `DA` |                                                              |
+| ICLR'25   | Data Selection via Optimal Control for Language Models       | [paper](https://openreview.net/pdf?id=dhAL5fy8wS) | `DS` |                                                              |
+| ICLR'25   | Capturing the Temporal Dependence of Training Data Influence | [paper](https://openreview.net/pdf?id=uHLgDEgiS5) | `DA` |                                                              |
+| ICLR'25   | ADAM Optimization with Adaptive Batch Selection              | [paper](https://openreview.net/pdf?id=BZrSCv2SBq) | `DS` |                                                              |
+| ICLR'25   | Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws | [paper](https://openreview.net/pdf?id=aqok1UX7Z1) | `DS` |                                                              |
+| ICLR'25   | Adversarial Attacks on Data Attribution                      | [paper](https://openreview.net/pdf?id=oJgIRwkIUB) | `DA` |                                                              |
+| ICLR'25   | An Efficient Framework for Crediting Data Contributors of Diffusion Models | [paper](https://openreview.net/pdf?id=9EqQC2ct4H) | `DA` |                                                              |
+| ICLR'25   | Compute-Constrained Data Selection                           | [paper](https://openreview.net/pdf?id=4es2oO9tw1) | `DS` |                                                              |
+| ICLR'25   | Coreset Selection via Reducible Loss in Continual Learning   | [paper](https://openreview.net/pdf?id=mAztx8QO3B) | `DS` |                                                              |
+| ICLR'25   | Data Pruning by Information Maximization                     | [paper](https://openreview.net/pdf?id=93XT0lKOct) | `DS` |                                                              |
+| ICLR'25   | DataMan: Data Manager for Pre-training Large Language Models | [paper](https://openreview.net/pdf?id=eNbA8Fqir4) |      |                                                              |
+| ICLR'25   | DICE: Data Influence Cascade in Decentralized Learning       | [paper](https://openreview.net/pdf?id=2TIYkqieKw) | `DA` |                                                              |
+| ICLR'25   | Diffusion Attribution Score: Which Training Sample Determines Your Generation? | [paper](https://openreview.net/pdf?id=kuutidLf6R) | `DA` |                                                              |
+| ICLR'25   | DRoP: Distributionally Robust Data Pruning                   | [paper](https://openreview.net/pdf?id=fxv0FfmDAg) | `DS` |                                                              |
+| ICLR'25   | Enhancing Training Robustness through Influence Measure      | [paper](https://openreview.net/pdf?id=KjBG4JNOc2) | `DA` |                                                              |
+| ICLR'25   | GMValuator: Similarity-based Data Valuation for Generative Models | [paper](https://openreview.net/pdf?id=WncnpvJk83) | `DA` |                                                              |
+| ICLR'25   | Harnessing Diversity for Important Data Selection in Pretraining Large Language Models | [paper](https://openreview.net/pdf?id=bMC1t7eLRc) | `DS` |                                                              |
+| ICLR'25   | Improving Pretraining Data Using Perplexity Correlations     | [paper](https://openreview.net/pdf?id=huuKoVQnB0) |      |                                                              |
+| ICLR'25   | Influence Functions for Scalable Data Attribution in Diffusion Models | [paper](https://openreview.net/pdf?id=esYrEndGsr) | `DA` |                                                              |
+| ICLR'25   | Label-Free Coreset Selection with Proxy Training Dynamics    | [paper](https://openreview.net/pdf?id=yklJpvB7Dq) | `DS` |                                                              |
+| ICLR'25   | Precedence-Constrained Winter Value for Effective Graph Data Valuation | [paper](https://openreview.net/pdf?id=tVRVE0OAyb) | `DA` |                                                              |
+| ICLR'25   | SAVA: Scalable Learning-Agnostic Data Valuation              | [paper](https://openreview.net/pdf?id=0UCoWxPhQ4) | `DA` |                                                              |
+| ICLR'25   | Scalable Influence and Fact Tracing for Large Language Model Pretraining | [paper](https://openreview.net/pdf?id=gLa96FlWwn) | `DA` |                                                              |
+| ICLR'25   | SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection | [paper](https://openreview.net/pdf?id=VHguhvcoM5) | `DA` |                                                              |
+| ICLR'25   | SelectFormer: Private and Practical Data Selection for Transformers | [paper](https://openreview.net/pdf?id=C5sxQsqv7X) | `DS` |                                                              |
+| ICLR'25   | Severing Spurious Correlations with Data Pruning             | [paper](https://openreview.net/pdf?id=Bk13Qfu8Ru) | `DS` |                                                              |
+| ICLR'25   | Shapley-Guided Utility Learning for Effective Graph Inference Data Valuation | [paper](https://openreview.net/pdf?id=8X74NZpARg) | `DA` |                                                              |
+| ICLR'25   | Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale | [paper](https://openreview.net/pdf?id=79ZkWgY2FI) | `DA` |                                                              |
+| ICLR'25   | STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning | [paper](https://openreview.net/pdf?id=FAfxvdv1Dy) | `DS` |                                                              |
+| ICLR'25   | Structural-Entropy-Based Sample Selection for Efficient and Effective Learning | [paper](https://openreview.net/pdf?id=xUMI52rrW7) | `DS` |                                                              |
+| ICLR'25   | TimeInf: Time Series Data Contribution via Influence Functions | [paper](https://openreview.net/pdf?id=Vz0CWFMPUe) | `DA` |                                                              |
+| ICLR'25   | Top-m Data Values Identification                             | [paper](https://openreview.net/pdf?id=lOfuvmi2HT) | `DA` |                                                              |
+| ICLR'25   | ZooProbe: A Data Engine for Evaluating, Exploring, and Evolving Large-scale Training Data for Multimodal LLMs | [paper](https://openreview.net/pdf?id=T4LtGj7us1) |      |                                                              |
 
 ### 2024
 
@@ -40,12 +74,9 @@ We collect the recent influential papers about DQMS for ML and annotate the rele
 | arXiv'24   | Distilling The Knowledge in Data Pruning                     |          [paper](https://arxiv.org/pdf/2403.07854)           |   `DS`    |                                                              |
 | Openreview | GMValuator: Similarity-based Data Valuation for Generative Models |      [paper](https://openreview.net/pdf?id=WncnpvJk83)       |   `DA`    |                                                              |
 | Openreview | Harnessing Diversity for Important Data Selection in Pretraining Large Language Models |      [paper](https://openreview.net/pdf?id=bMC1t7eLRc)       |   `DA`    |                                                              |
-| Openreview | SAVA: Scalable Learning-Agnostic Data Valuation              |      [paper](https://openreview.net/pdf?id=0UCoWxPhQ4)       |   `DA`    |                                                              |
 | Openreview | Data Attribution for Multitask Learning                      |     [paper](https://openreview.net/forum?id=77zLqGGowO)      |   `DA`    |                                                              |
 | Openreview | On the Inflation of KNN-Shapley Value                        |         [paper](https://arxiv.org/html/2405.17489v1)         |   `DA`    |                                                              |
 | Openreview | Data Valuation for Graphs                                    |      [paper](https://openreview.net/pdf?id=VW21r9rTjE)       |   `DA`    |                                                              |
-| Openreview | Precedence-Constrained Winter Value for Effective Graph Data Valuation |         [paper](https://arxiv.org/pdf/2402.01943v2)          |   `DA`    |                                                              |
-| Openreview | Data Shapley in One Training Run                             |      [paper](https://openreview.net/pdf?id=HD6bWcj87Y)       |   `DA`    |                                                              |
 | Openreview | Generalized Group Data Attribution                           |      [paper](https://openreview.net/pdf?id=BQgAToASdX)       |   `DA`    |                                                              |
 | Openreview | Top-m Data Values Identification                             |      [paper](https://openreview.net/pdf?id=lOfuvmi2HT)       |   `DA`    |                                                              |
 | NIPS'24    | Not All Tokens Are What You Need for Pretraining             |      [paper](https://openreview.net/pdf?id=0NMzBwqaAJ)       |   `DS`    |                                                              |
