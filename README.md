@@ -16,7 +16,6 @@ Considering the following pipeline, DQMS acts as a **middleware** between data, 
 <img src="./framework.png" width = "80%" />
 </div>
 
-
 A DQMS for ML typically consists of three components: **Data Sculptor** [2], **Data Attributer**, and **Data Profiler**. To achieve a well-performing ML model, multiple rounds of training are often required. In this process, the DQMS needs to iteratively adjust the training data based on the results of each round of model training. The workflow of DQMS in one round of training is as follows: (a) Data sculptor first acquires the training dataset from a data source and trains the ML model with it. (b) After training for one round (several epochs), Data Attributer absorbs feedback from the model and user's task requirements and computes the data quality assessment. (c) Data Profiler then provides a user-friendly summary of the training data. (d) Meanwhile, Data Sculptor utilizes the data quality assessment as feedback to construct higher-quality training data, thus initiating a new iteration.
 
 We collect the recent papers about DQMS for ML and annotate the relevant DQMS components involved in these papers, where `DS` = Data Sculptor, `DA` = Data Attributer, and `DP` = Data Profiler. First, we will introduce some papers and researchers that we consider influential, to help starters quickly gain an overall understanding of DQMS for ML. Then, we will present a complete list of relevant papers, which is sorted by publication date.
@@ -58,9 +57,30 @@ We collect the recent papers about DQMS for ML and annotate the relevant DQMS co
 
 [Ruoxi Jia](https://scholar.google.com/citations?user=JCrug-YAAAAJ&hl=zh-CN&oi=ao), [James Zou](https://scholar.google.com/citations?user=23ZXZvEAAAAJ&hl=zh-CN), [Jian Pei](https://scholar.google.com/citations?user=zIMEVKsAAAAJ&hl=en&oi=ao), [Kui Ren](https://scholar.google.com/citations?user=uuQA_rcAAAAJ&hl=en&oi=sra), [Jiaqi W. Ma](https://scholar.google.com/citations?user=Z9X2A1MAAAAJ&hl=en&oi=ao), [Amirata Ghorbani](https://scholar.google.com/citations?user=kuFQfwEAAAAJ&hl=en), [Jiachen T. Wang](https://scholar.google.com/citations?user=nvQOtgkAAAAJ&hl=en&oi=sra), ...
 
+## Key Words
 
+Data selection; Data attribution; Data valuation; Influence function; Shapley value; Data pruning; Coreset selection; Data debugging;   Data curation; Data profiling; ....
 
 ## Paper List
+
+### 2026
+
+| Venue   | Paper                                                        |                            Links                             |   Tags    | TLDR                                                         |
+| :------ | :----------------------------------------------------------- | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------- |
+| ICLR'26 | Can Small Training Runs Reliably Guide Data Curation? Rethinking Proxy-Model Practice |          [paper](https://arxiv.org/pdf/2512.24503)           |   `DS`    | The hyperparameters of the lighteweight proxy model for data selection is critical. |
+| ICLR'26 | First is Not Really Better Than Last: Evaluating Layer Choice and Aggregation Strategies in Language Model Data Influence Estimation | [paper](https://arxiv.org/pdf/2511.04715) [code](https://github.com/dvitel/nn-infl) |   `DA`    | To smulate influence functions, using params of middle attention layers are more accurate. |
+| ICLR'26 | Towards Understanding Valuable Preference Data for Large Language Model Alignment | [paper](https://arxiv.org/pdf/2510.13212) [code](https://github.com/tmlr-group/TIF_LossDiff-IRM) |   `DA`    | Influence function for preference data and LLMs trained on DPO. |
+| ICLR'26 | Holdout-Loss-Based Data Selection for LLM Finetuning via In-Context Learning |          [paper](https://arxiv.org/pdf/2510.14459)           |   `DS`    | The ICA-score of training data for LLM fine-tuning is: $l(y|x;\theta)-l(y|x,D_{ho};\theta)$, with  $D_{ho}$ being a hold out high-quality data. |
+| ICLR'26 | Neuron-Aware Data Selection in Instruction Tuning for Large Language Models |          [paper](https://arxiv.org/pdf/2603.13201)           |   `DS`    | This work analyse the impact of IT data by comparing the similarity of neuron activation patterns between the IT data and the target domain. |
+| ICLR'26 | High-dimensional Analysis of Synthetic Data Selection        |      [paper](https://openreview.net/pdf?id=Y54P2BBPPh)       |   `DS`    | This work aims to select a subset of synthetic data. It is selected by matching matching the covariance of  synthetic data with that of the target data) |
+| ICLR'26 | PASER: Post-Training Data Selection for Efficient Pruned Large Language Model Recovery |      [paper](https://openreview.net/pdf?id=mWKvHBINSl)       |   `DS`    |                                                              |
+| ICLR'26 | Train on Validation (ToV): Fast data selection with applications to fine-tuning |          [paper](https://arxiv.org/pdf/2510.00386)           |   `DS`    | This work uses a high-quality validation data to fine-tune the model, and compute the difference of loss of each training sample. |
+| ICLR'26 | Influence-Preserving Proxies for Gradient-Based Data Selection in LLM FineTuning | [paper](https://arxiv.org/pdf/2602.17835) [code](https://github.com/csr16/IProX) | `DS` `DA` | This work trains a proxy model for efficient influence computation. |
+| ICLR'26 | Task-Aware Data Selection via Proxy-Label Enhanced Distribution Matching for LLM Finetuning | [paper](https://openreview.net/pdf?id=R40WoYbYab) [code](https://github.com/tmlr-group/TADS) |   `DS`    |                                                              |
+|         |                                                              |                                                              |           |                                                              |
+|         |                                                              |                                                              |           |                                                              |
+|         |                                                              |                                                              |           |                                                              |
+|         |                                                              |                                                              |           |                                                              |
 
 ### 2025
 
