@@ -59,7 +59,7 @@ We collect the recent papers about DQMS for ML and annotate the relevant DQMS co
 
 ## Key Words
 
-Data selection; Data attribution; Data valuation; Influence function; Shapley value; Data pruning; Coreset selection; Data debugging;   Data curation; Data profiling; ....
+Data selection; Data attribution; Data valuation; Influence function; Shapley value; Data pruning; Coreset selection; Data debugging;  Data curation; Data profiling; ....
 
 ## Paper List
 
@@ -67,19 +67,24 @@ Data selection; Data attribution; Data valuation; Influence function; Shapley va
 
 | Venue   | Paper                                                        |                            Links                             |   Tags    | TLDR                                                         |
 | :------ | :----------------------------------------------------------- | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------- |
-| ICLR'26 | Can Small Training Runs Reliably Guide Data Curation? Rethinking Proxy-Model Practice |          [paper](https://arxiv.org/pdf/2512.24503)           |   `DS`    | The hyperparameters of the lighteweight proxy model for data selection is critical. |
-| ICLR'26 | First is Not Really Better Than Last: Evaluating Layer Choice and Aggregation Strategies in Language Model Data Influence Estimation | [paper](https://arxiv.org/pdf/2511.04715) [code](https://github.com/dvitel/nn-infl) |   `DA`    | To smulate influence functions, using params of middle attention layers are more accurate. |
-| ICLR'26 | Towards Understanding Valuable Preference Data for Large Language Model Alignment | [paper](https://arxiv.org/pdf/2510.13212) [code](https://github.com/tmlr-group/TIF_LossDiff-IRM) |   `DA`    | Influence function for preference data and LLMs trained on DPO. |
-| ICLR'26 | Holdout-Loss-Based Data Selection for LLM Finetuning via In-Context Learning |          [paper](https://arxiv.org/pdf/2510.14459)           |   `DS`    | The ICA-score of training data for LLM fine-tuning is: $l(y|x;\theta)-l(y|x,D_{ho};\theta)$, with  $D_{ho}$ being a hold out high-quality data. |
-| ICLR'26 | Neuron-Aware Data Selection in Instruction Tuning for Large Language Models |          [paper](https://arxiv.org/pdf/2603.13201)           |   `DS`    | This work analyse the impact of IT data by comparing the similarity of neuron activation patterns between the IT data and the target domain. |
-| ICLR'26 | High-dimensional Analysis of Synthetic Data Selection        |      [paper](https://openreview.net/pdf?id=Y54P2BBPPh)       |   `DS`    | This work aims to select a subset of synthetic data. It is selected by matching matching the covariance of  synthetic data with that of the target data) |
+| ICLR'26 | Can Small Training Runs Reliably Guide Data Curation? Rethinking Proxy-Model Practice |          [paper](https://arxiv.org/pdf/2512.24503)           |   `DS`    | *The hyperparameters of the lighteweight proxy model for data selection is critical.* |
+| ICLR'26 | First is Not Really Better Than Last: Evaluating Layer Choice and Aggregation Strategies in Language Model Data Influence Estimation | [paper](https://arxiv.org/pdf/2511.04715) [code](https://github.com/dvitel/nn-infl) |   `DA`    | *To estimate influence functions, using params of middle attention layers are more accurate.* |
+| ICLR'26 | Towards Understanding Valuable Preference Data for Large Language Model Alignment | [paper](https://arxiv.org/pdf/2510.13212) [code](https://github.com/tmlr-group/TIF_LossDiff-IRM) |   `DA`    | *Influence function for preference data and LLMs trained on DPO.* |
+| ICLR'26 | Holdout-Loss-Based Data Selection for LLM Finetuning via In-Context Learning |          [paper](https://arxiv.org/pdf/2510.14459)           |   `DS`    | *The ICA-score of training data for LLM fine-tuning is: $l(y|x;\theta)-l(y|x,D_{ho};\theta)$, with  $D_{ho}$ being a hold out high-quality data.* |
+| ICLR'26 | Neuron-Aware Data Selection in Instruction Tuning for Large Language Models |          [paper](https://arxiv.org/pdf/2603.13201)           |   `DS`    | *This work analyse the impact of IT data by comparing the similarity of neuron activation patterns between the IT data and the target domain.* |
+| ICLR'26 | High-dimensional Analysis of Synthetic Data Selection        |      [paper](https://openreview.net/pdf?id=Y54P2BBPPh)       |   `DS`    | *This work aims to select a subset of synthetic data. It is selected by matching matching the covariance of  synthetic data with that of the target data.* |
 | ICLR'26 | PASER: Post-Training Data Selection for Efficient Pruned Large Language Model Recovery |      [paper](https://openreview.net/pdf?id=mWKvHBINSl)       |   `DS`    |                                                              |
-| ICLR'26 | Train on Validation (ToV): Fast data selection with applications to fine-tuning |          [paper](https://arxiv.org/pdf/2510.00386)           |   `DS`    | This work uses a high-quality validation data to fine-tune the model, and compute the difference of loss of each training sample. |
-| ICLR'26 | Influence-Preserving Proxies for Gradient-Based Data Selection in LLM FineTuning | [paper](https://arxiv.org/pdf/2602.17835) [code](https://github.com/csr16/IProX) | `DS` `DA` | This work trains a proxy model for efficient influence computation. |
+| ICLR'26 | Train on Validation (ToV): Fast data selection with applications to fine-tuning |          [paper](https://arxiv.org/pdf/2510.00386)           |   `DS`    | *This work uses a high-quality validation data to fine-tune the model, and compute the difference of loss of each training sample.* |
+| ICLR'26 | Influence-Preserving Proxies for Gradient-Based Data Selection in LLM FineTuning | [paper](https://arxiv.org/pdf/2602.17835) [code](https://github.com/csr16/IProX) | `DS` `DA` | *This work trains a proxy model for efficient influence computation.* |
 | ICLR'26 | Task-Aware Data Selection via Proxy-Label Enhanced Distribution Matching for LLM Finetuning | [paper](https://openreview.net/pdf?id=R40WoYbYab) [code](https://github.com/tmlr-group/TADS) |   `DS`    |                                                              |
-|         |                                                              |                                                              |           |                                                              |
-|         |                                                              |                                                              |           |                                                              |
-|         |                                                              |                                                              |           |                                                              |
+| ICLR'26 | Learning to Weight Parameters for Data Attribution           |          [paper](https://arxiv.org/pdf/2506.05647)           |   `DA`    |                                                              |
+| ICLR'26 | Bayesian Influence Functions for Hessian-Free Data Attribution |          [paper](https://arxiv.org/pdf/2509.26544)           |   `DA`    |                                                              |
+| ICLR'26 | Influence Dynamics and Stagewise Data Attribution            |          [paper](https://arxiv.org/pdf/2510.12071)           |   `DA`    |                                                              |
+| ICLR'26 | On the Impact of the Utility in Semivalue-based Data Valuation |          [paper](https://arxiv.org/pdf/2502.06574)           |   `DA`    |                                                              |
+| ICLR'26 | f-INE: A Hypothesis Testing Framework for Estimating Influence under Training Randomness |          [paper](https://arxiv.org/pdf/2510.10510)           |   `DA`    |                                                              |
+| ICLR'26 | Evaluating Data Influence in Meta Learning                   |          [paper](https://arxiv.org/pdf/2501.15963)           |   `DA`    |                                                              |
+| ICLR'26 | OrderDP: A Theoretically Guaranteed Lossless Dynamic Data Pruning Framework | [paper](https://openreview.net/pdf?id=e77QyyRQPz) [code](https://github.com/shengze-xu/OrderDP) |   `DS`    |                                                              |
+| ICLR'26 | DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems | [paper](https://arxiv.org/pdf/2512.06749)  [code](https://aka.ms/DoVer) |   `DP`    |                                                              |
 |         |                                                              |                                                              |           |                                                              |
 
 ### 2025
